@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery with Categories</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+
+    <nav class="custom-nav">
+        <h1>Insha's Gallery</h1>
+        <ul>
+            <li onclick="filterGallery('all')" class="active">All</li>
+            <li onclick="filterGallery('nature')">Nature</li>
+            <li onclick="filterGallery('food')">Food</li>
+            <li onclick="filterGallery('travel')">Travel</li>
+            <li onclick="filterGallery('fashion')">Fashion</li>
+            <li onclick="filterGallery('architecture')">Architecture</li>
+
+        </ul>
+    </nav>
+
+
+    <section class="filter-gallery">
+        <div class="gallery-image nature">
+            <img src="images/nature1.jpg" alt="Nature 1" />
+        </div>
+
+        <div class="gallery-image fashion">
+                <img src="images/fasion2.webp" alt="Fashion 2" />
+            </div>
+
+        <div class="gallery-image food">
+            <img src="images/chickenpasta.jpg" alt="Food 1" />
+        </div>
+
+        <div class="gallery-image nature">
+            <img src="images/nature2.jpg" alt="Nature 2" />
+        </div>
+        
+            <div class="gallery-image architecture">
+                <img src="images/archi2.jpg" alt="Architecture 2" />
+            </div>
+
+        <div class="gallery-image travel">
+            <img src="images/travel1.jpg" alt="Travel 1" />
+             </div>
+
+            <div class="gallery-image fashion">
+                <img src="images/fasion1.jpg" alt="Fashion 1" />
+            </div>
+            <!-- Repeat 4 times -->
+
+            <div class="gallery-image architecture">
+                <img src="images/archi1.jpg" alt="Architecture 1" />
+            </div>
+            <!-- Repeat 4 times -->
+             <div class="gallery-image fashion">
+                <img src="images/fasion3.webp" alt="Fashion 3" />
+            </div>
+
+       
+        <div class="gallery-image food">
+            <img src="images/creramypasta.jpg" alt="Food 2" />
+        </div>
+
+        <div class="gallery-image nature">
+            <img src="images/nature3.jpg" alt="Nature 3" />
+        </div>
+
+
+        <div class="gallery-image food">
+            <img src="images/noddles.jpg" alt="Food 3" />
+           </div> 
+            
+            <div class="gallery-image architecture">
+                <img src="images/archi3.jpg" alt="Architecture 3" />
+            </div>
+
+        <div class="gallery-image travel">
+            <img src="images/travel2.jpg" alt="Travel 2" />
+        </div>
+
+        <div class="gallery-image fashion">
+                <img src="images/fasion4.webp" alt="Fashion 4" />
+            </div>
+            
+        <div class="gallery-image nature">
+            <img src="images/nature4.avif" alt="Nature 4" />
+        </div>
+
+        <div class="gallery-image travel">
+            <img src="images/travel3.jpg" alt="Travel 3" />
+        </div>
+
+        <div class="gallery-image food">
+            <img src="images/vegecurry.jpg" alt="Food 4" />
+        </div>
+
+        <div class="gallery-image travel">
+            <img src="images/travel4.jpg" alt="Travel 4" />
+        </div>
+        
+            <div class="gallery-image architecture">
+                <img src="images/archi4.jpg" alt="Architecture 4" />
+            </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-image" id="lightbox-image" src="" alt="">
+        <div class="lightbox-nav">
+            <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+            <span class="next" onclick="changeImage(1)">&#10095;</span>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
